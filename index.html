@@ -1,0 +1,13 @@
+<script src="angular.min.js"></script>
+<script src="index.js"></script>
+<title>Legnagyobb közös osztó</title>
+<body ng-app="a" ng-controller="c">
+Számok bekérése.<br><br>
+<input id="i" ng-model="x" placeholder="első szám"><br><br>
+<input id="i" ng-model="y" placeholder="második szám"><br><br>
+<hr>
+<button ng-click="f()">számol</button><hr>
+A legnagyobb közös osztó: {{er}}<br>
+A legkisebb közös többszörös: {{x*y/er}}
+<hr>debug:<br>x: {{x}}, y: {{y}}
+</body>
