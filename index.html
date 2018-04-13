@@ -1,13 +1,29 @@
-<script src="angular.min.js"></script>
+<script src="libs/angular.min.js"></script>
 <script src="index.js"></script>
+<link rel="stylesheet" href="libs/bootstrap.min.css">
+<link rel="stylesheet" href="libs/ui-bootstrap-2.5.0-csp.css">
+<script src="libs/ui-bootstrap-tpls-2.5.0.min.js"></script>
 <title>Legnagyobb közös osztó</title>
 <body ng-app="a" ng-controller="c">
-Számok bekérése.<br><br>
-<input id="i" ng-model="x" placeholder="első szám"><br><br>
-<input id="i" ng-model="y" placeholder="második szám"><br><br>
+<div class="text-center">
+<h3>Asztali alkalmazás mintaprogram</h3>
+<h4><p class="bg-info">Dr. Németh Tamás</p></h4><br>
+<input class="form-control"
+       type="number"
+       id="i"
+       ng-model="x"
+       ng-change="f()"
+       placeholder="első szám"><br><br>
+<input class="form-control"
+       type="number"
+       id="i"
+       ng-model="y"
+       ng-change="f()"
+       placeholder="második szám"><br><br>
 <hr>
-<button ng-click="f()">számol</button><hr>
+<p class="lead">
 A legnagyobb közös osztó: {{er}}<br>
 A legkisebb közös többszörös: {{x*y/er}}
-<hr>debug:<br>x: {{x}}, y: {{y}}
+</p>
+</div>
 </body>

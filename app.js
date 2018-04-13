@@ -6,7 +6,6 @@ app.once('ready', () => {
   window = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: "#D6D8DC",
     show: false
   })
   window.loadURL(url.format({
