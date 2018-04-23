@@ -1,9 +1,16 @@
 angular
   .module('a', [])
   .controller('c', ($scope,$window) => {
-    $scope.lista = [ ]
-    $scope.hozzaad = () => {
-      $scope.lista.push($scope.ef)
-      $scope.lista.sort( (a,b) => a.localeCompare(b) )
+    lista = [ ]
+    $scope.kb = () => {
+        re = new RegExp(`^${$scope.ef}.*`,`i`)
+        $scope.lista = lista.filter( v => re.test(v) )
     }
+    $scope.hozzaad = () => {
+      lista.push($scope.ef)
+      lista.sort( (a,b) => a.localeCompare(b) )
+      $scope.ef=""
+      $scope.lista=lista
+    }
+    $scope.lista=lista
   } )

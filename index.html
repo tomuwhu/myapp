@@ -6,11 +6,11 @@
 <script src="libs/ui-bootstrap-tpls-2.5.0.min.js"></script>
 <title>Legnagyobb közös osztó</title>
 <body ng-app="a" ng-controller="c" class="text-center">
-<input class="form-control" ng-model="ef">
+<input class="form-control" ng-model="ef" ng-keyup="kb()">
 <br>
 <button class="btn-primary" ng-click="hozzaad()">Felvesz</button>
 <hr>
-<div ng-repeat="elem in lista">
+<div ng-repeat="elem in lista track by $index">
   {{ elem }}
 </div>
 </body>
