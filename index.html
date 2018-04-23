@@ -6,7 +6,7 @@
 <script src="libs/ui-bootstrap-tpls-2.5.0.min.js"></script>
 <title>Legnagyobb közös osztó</title>
 <body ng-app="a" ng-controller="c" class="text-center">
-<input class="form-control" ng-model="ef" ng-keyup="kb()">
+<input class="form-control" ng-model="ef" ng-keyup="kb($event)">
 <br>
 <button class="btn-primary" ng-click="hozzaad()">Felvesz</button>
 <hr>
